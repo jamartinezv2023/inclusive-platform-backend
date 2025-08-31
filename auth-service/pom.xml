@@ -47,7 +47,7 @@
       <artifactId>jakarta.validation-api</artifactId>
     </dependency>
 
-    <!-- JWT Updated -->
+    <!-- JWT -->
     <dependency>
       <groupId>io.jsonwebtoken</groupId>
       <artifactId>jjwt-api</artifactId>
@@ -94,11 +94,11 @@
       <version>2.5.0</version>
     </dependency>
 
-    <!-- MapStruct (opcional, para DTO mapping) -->
+    <!-- MapStruct -->
     <dependency>
       <groupId>org.mapstruct</groupId>
       <artifactId>mapstruct</artifactId>
-      <version>1.5.5.Final</version>
+      <version>${mapstruct.version}</version>
     </dependency>
     <dependency>
       <groupId>jakarta.annotation</groupId>
@@ -106,26 +106,17 @@
       <version>2.1.1</version>
     </dependency>
 
-    <!-- ... tus dependencias existentes ... -->
-
-    <!-- Spring Boot Starter GraphQL -->
+    <!-- Spring Boot GraphQL Starter (oficial, compatible con graphql-java 21.x) -->
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-graphql</artifactId>
     </dependency>
 
-    <!-- GraphQL Tools for schema and resolvers -->
+    <!-- GraphQL Extended Scalars (para DateTime, etc.) -->
     <dependency>
-      <groupId>com.graphql-java-kickstart</groupId>
-      <artifactId>graphql-spring-boot-starter</artifactId>
-      <version>11.1.0</version>
-    </dependency>
-
-    <!-- GraphQL Java Tools (para mapeo esquema y resolvers) -->
-    <dependency>
-      <groupId>com.graphql-java-kickstart</groupId>
-      <artifactId>graphql-java-tools</artifactId>
-      <version>11.1.0</version>
+      <groupId>com.graphql-java</groupId>
+      <artifactId>graphql-java-extended-scalars</artifactId>
+      <version>21.0</version>
     </dependency>
 
     <!-- DevTools -->
@@ -170,3 +161,4 @@
   </build>
 
 </project>
+
