@@ -1,0 +1,30 @@
+# schema.graphqls
+
+type Query {
+    users: [User!]!
+    userById(id: ID!): User
+    profiles: [Profile!]!
+}
+
+type Mutation {
+    createUser(input: CreateUserInput!): User!
+}
+
+type User {
+    id: ID!
+    username: String!
+    email: String!
+    profiles: [Profile!]
+}
+
+type Profile {
+    id: ID!
+    name: String!
+    description: String
+}
+
+input CreateUserInput {
+    username: String!
+    email: String!
+    password: String!
+}
